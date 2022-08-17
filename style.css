@@ -17,10 +17,11 @@ header{
     border-radius: 10px 10px 10px 10px;
     color: black;
     padding-top: 30px;
-    padding-left: 20px;
-    margin-left: 400px;
+    margin: auto;
 }
-.container{
+
+.container, #res{
     margin: 20px;
     font-size: 16pt;
 }
+
