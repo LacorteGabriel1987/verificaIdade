@@ -8,38 +8,38 @@ function verificar() {
     } else {
     var fsex = document.getElementsByName("radsex")
     var idade = ano - Number(fano.value)
-    var gênero = ''
+    //var gênero = ''
     var img = document.createElement("img")
     img.setAttribute("id", "foto")
     if (fsex[0].checked) {
         gênero = "Homem"
         if (idade >= 0 && idade < 10) {
             //criança
-            img.setAttribute(`src`, 'img/bebe-h.jpg')
+            img.setAttribute(`src`,'img/bebe-h.jpg')
         } else if (idade < 21) {
             //jovem
-            img.setAttribute(`src`, 'img/')
+            img.setAttribute(`src`,'img/jovem-h.jpg')
         } else if (idade < 50) {
             //Adulto
-            img.setAttribute(`src`, 'img/')
+            img.setAttribute(`src`, 'img/adulto-h.jpg')
         } else {
             //Idoso
-            img.setAttribute(`src`, 'img')
+            img.setAttribute(`src`, 'img/idoso.jpg')
         }
     } else if (fsex[1].checked) {
         gênero = "Mulher"
         if (idade >= 0 && idade < 10) {
             //criança
-            img.setAttribute(`src`, 'img/bebe-h.jpg')
+            img.setAttribute(`src`, 'img/bebe-m.jpg')
         } else if (idade < 21) {
-            //Jovem
-            img.setAttribute(`src`, 'img/bebe-h.jpg')
+            //Jovem - Mulher
+            img.setAttribute(`src`, 'img/jovem-m.jpg')
         } else if (idade < 50) {
-            //Adulto
-            img.setAttribute(`src`, 'img/bebe-h.jpg')
+            //Adulto - Mulher
+            img.setAttribute(`src`, 'img/adulto-m.jpg')
         } else
-            //idoso
-            img.setAttribute(`src`, 'img/bebe-h.jpg')
+            //idosa
+            img.setAttribute(`src`, 'img/idosa.jpg')
     }
 }
             res.style.textAlign = 'center'
